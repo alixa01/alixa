@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Quicksand:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:wght@700&family=Kaushan+Script&family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    min-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+/*header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+}*/
+
+.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+.navbar-container .heading {
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #279EFF;
+}
+
+.navbar-container .nav-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem 4rem;
+    padding: 0;
+}
+
+.navbar-container .nav-list li {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-container .nav-list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: .5rem .8rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+    &:hover {
+        background-color: #279EFF;
+        color: white;
+    }
+}
+
+main {
+    width: 100%;
+    margin-inline: auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 300px;
+}
+#home {
+
+}
+.content {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 170px;
+    margin-top: 140px;
+    margin-bottom: 200px;
+    padding: 2rem 4rem;
+}
+
+.content .content-description {
+    flex: 1 1;
+}
+
+.content .content-description .greeting {
+    color: #279EFF;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: .3rem;
+    margin: 0;
+}
+
+.content .content-description .name{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.content .content-description p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.content .content-description button {
+    padding: .5rem 1.3rem;
+    margin-block-start: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+
+    border: 3px solid transparent;
+    background-color: #279EFF;
+    cursor: pointer;
+    border-radius: 999px;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+        border: 3px solid #279EFF;
+        box-shadow: 0 0 10px 0 #279EFF inset, 0 0 10px 4px #279EFF;
+        color: #279EFF;
+        background-color: transparent;
+    }
+}
+
+.content .self-image img {
+    min-width: 250px;
+    width: 380px;
+    margin: auto;
+    border-radius: 130px 30px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        transform: scale(1.2) rotate(3deg) skewX(-3deg);
+    }
+}
+
+.bg {
+    height: 700px;
+    overflow: hidden;
+}
+
+.bg .image {
+    max-width: 1200px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+ /* SKILLS */
+
+.skills {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+}
+
+.skills .header-skills {
+    color: #279EFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+.skills-description {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.skills-description .skills-desc {
+    width: 60%;
+}
+
+.skills-desc .h1-skills-desc {
+    color: #279EFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.skills-desc p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: normal;
+}
+
+.skills-description .skills-img {
+    margin: auto;
+}
+
+.skills-description .skills-img img{
+    min-width: 150px;
+    width: 200px;
+}
+
+.skills-description .skills-img-reverse {
+    margin: auto;
+    order: 2;
+}
+
+.skills-description .skills-img-reverse img{
+    min-width: 150px;
+    width: 200px;
+}
+
+aside {
+    margin-top: 30px;
+}
+.about {
+    height: 80vh;
+    width: 1200px;
+    background: #279EFF;
+    box-shadow: 0 0px 25px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 350px;
+}
+
+.about .about-card{
+    border-radius: 25px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 23px 2px rgba(0, 0, 0, 0.25);
+    transition: .3s;
+    cursor: default;
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 10px 0 #fff inset, 0 0 10px 4px #fff;
+    }
+}
+
+.about-card img {
+    clip-path: circle();
+    min-width: 200px;
+    width: 250px;
+}
+
+.about-card .about-greeting{
+    color: #279EFF;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: .2rem;
+    margin: 0;
+}
+
+.about-card h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    margin: 0;
+}
+
+.about-card .about-desc {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    align-content: center;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-top: 1px solid black;
+    padding-bottom: 30px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h1 {
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #279EFF;
+}
+
+.footer h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.footer a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    padding: 7px 0;
+
+    &:hover{
+        color: #279EFF;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+
+    .navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .navbar-container .heading {
+        font-size: 5rem;
+    }
+
+    .navbar-container .nav-list li a {
+        font-size: 2rem;
+    }
+
+    .content {
+        margin: 4rem 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 8rem;
+    }
+
+    .content .self-image img {
+        width: 600px;
+    }
+
+    .content-description {
+        width: 90%;
+    }
+
+    .content .content-description .greeting {
+         font-size: 3rem;
+     }
+
+    .content .content-description .name{
+        font-size: 6rem;
+        margin: 0;
+    }
+
+    .content .content-description p{
+        font-size: 2.8rem;
+        margin: 0;
+    }
+
+    .content .content-description button {
+        padding: .7rem 2.2rem;
+        font-size: 2rem;
+    }
+
+    .skills-description {
+        flex-direction: column;
+    }
+
+    .header-skills {
+        text-align: center;
+    }
+
+    .skills-description .skills-img-reverse {
+        order: 1;
+    }
+
+    .skills-description .skills-desc {
+        order: 2;
+        width: 100%;
+    }
+
+    .skills-description .skills-img img{
+        min-width: 150px;
+        width: 400px;
+    }
+
+    .skills-description .skills-img-reverse img{
+        min-width: 150px;
+        width: 400px;
+    }
+
+    .header-skills {
+        font-size: 4rem;
+        margin: 0;
+    }
+    .skills-desc .h1-skills-desc {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .skills-desc p {
+        font-size: 2.2rem;
+        font-weight: normal;
+    }
+
+    .about {
+        height: 150vh;
+        padding: 0 225px;
+    }
+
+    .about-card img {
+        padding: 40px 0;
+        width: 450px;
+    }
+
+    .about-card .about-greeting {
+        font-size: 3rem;
+    }
+
+    .about-card h2 {
+        font-size: 4rem;
+    }
+
+    .about-card .about-desc {
+        font-size: 1.8rem;
+        padding: 0 10px;
+        margin-bottom: 50px;
+    }
+
+    .scrollTop {
+        font-size: 1rem;
+        padding: 20px 30px;
+    }
+}
+
+
+
+
+
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease 0s;
+
+    &:hover{
+        background-color: #f7f7f7;
+        color: #000;
+    }
